@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Company Database</title>
+ <link rel="stylesheet" type="text/css" href="styles.css">
+ <style>
+    body {
+    font-family: Arial, sans-serif;
+   }
+   
+   form {
+    margin-top: 50px;
+   }
+   
+   select {
+    padding: 10px;
+   }
+   
+   button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+   }
+ </style>
+</head>
+<body>
+ <h1>Company Database</h1>
+ <form action="/choose" method="post">
+ <label for="choice">Choose a table:</label>
+ <select id="choice" name="choice">
+ <option value="1">Employee</option>
+ <option value="2">Branch</option>
+ </select>
+ <button type="submit">Go</button>
+ </form>
+</body>
+</html>
