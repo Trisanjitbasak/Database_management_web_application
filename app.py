@@ -30,16 +30,16 @@ except:
 # Print the options for the user
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('https://trisanjitbasak.github.io/Database_management_web_application_templates/')
 
 # Get the user's choice
 @app.route('/choose', methods=['POST'])
 def choose():
     a = int(request.form['choice'])
     if a == 1:
-        return render_template('employees.html')
+        return render_template('https://trisanjitbasak.github.io/Database_management_web_application_templates/employees.html')
     elif a == 2:
-        return render_template('branch.html')
+        return render_template('https://trisanjitbasak.github.io/Database_management_web_application_templates/branch')
     else:
         return render_template('index.html')
 
